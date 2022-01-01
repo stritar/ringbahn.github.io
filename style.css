@@ -1,0 +1,25 @@
+html, body {
+
+    margin: 0;
+    background-color: #18161d;
+}
+
+.logo{
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    display: block;
+    width: 300px;
+    height: 51px;
+    margin: -25px 0 0 -150px;
+}
+
+@media (max-width: 480px) {
+   
+.logo{
+    width: 200px;
+    height: 34px;
+    margin: -17px 0 0 -100px;
+}
+
+}
