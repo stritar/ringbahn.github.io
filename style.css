@@ -8,9 +8,20 @@ html, body {
     height: auto;
 }
 
+.logo-2 {
+    margin: 32px 0 0 32px;
+    width: 267px;
+    height: auto;
+}
+
 @media (max-width: 480px) {
 .logo {
     width: 128px;
+    height: auto;
+    }
+
+.logo-2 {
+    width: 164px;
     height: auto;
     }
 }
