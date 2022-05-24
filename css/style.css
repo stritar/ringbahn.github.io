@@ -59,13 +59,14 @@ section {
 /*Header Content*/
 
 
-div#ghost {
-    display:none;
+#logo {
+   display:none; 
 }
 
 
-
-
+#ghost {
+    display:none;
+}
 
 .logo {
     height: 48px;
@@ -160,6 +161,7 @@ iframe {
     height: 600px;
     margin: 0;
     padding: 0;
+    pointer-events: none;
 
 }
 
@@ -190,7 +192,7 @@ iframe {
     
     .demo_text {
     width: auto;
-        padding: 0 16px;
+    padding: 0 16px;
 }
     h3.demo_text {
    margin-bottom: 1px;
@@ -223,6 +225,7 @@ iframe {
 iframe {
     width: 400px;
     height: 400px;
+
 }
     
 }
