@@ -78,6 +78,17 @@ div#ghost {
         height: 32px;
         padding: 32px 0 0 32px;
     }
+    .intro_text H2 {
+    position: absolute;
+    bottom: 48px;
+    width: 100%;
+    
+}
+
+.arrow {
+    position: absolute;
+    bottom: 16px;
+}
 }
 
 .intro_text {
