@@ -227,4 +227,7 @@ iframe {
     
 }
 
+.iframe-container {
+    overflow:scroll !important; -webkit-overflow-scrolling:touch !important;
+}
 
