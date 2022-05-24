@@ -24,11 +24,22 @@ h3 {
     color: #3E3B44;
 }
 
-p{
+
+
+p {
     font-family: "Campton-Book";
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 18px;
+    line-height: 26px;
     color: #3E3B44;  
+}
+
+a {
+      font-family: "Campton-Bold";
+      color: #3E3B44;  
+}
+
+.center {
+    text-align: center;
 }
 
 /*GLOBALS*/
@@ -234,3 +245,17 @@ iframe {
     overflow:scroll !important; -webkit-overflow-scrolling:touch !important;
 }
 
+.follow_us {
+    width: 200px;
+    padding-top: 40px;
+    padding-bottom: 80px;
+
+}
+
+@media (max-width: 600px){
+.follow_us {
+   padding-top: 40px;
+}
+
+}
+  
