@@ -1,0 +1,261 @@
+﻿/*FONTS*/
+@import url("//hello.myfonts.net/count/4a60c0");
+  
+@font-face {
+  font-family: "Campton-Bold";
+  src: url('/fonts/CamptonBold/font.woff2') format('woff2'), url('/fonts/CamptonBold/font.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Campton-Book";
+  src: url('/fonts/CamptonBook/font.woff2') format('woff2'), url('/fonts/CamptonBook/font.woff') format('woff');
+}
+
+h2 {
+    font-family: "Campton-Book";
+    font-size: 24px;
+    color: #3E3B44;
+}
+
+h3 {
+    font-family: "Campton-Bold";
+    font-size: 32px;
+    line-height: 32px;
+    color: #3E3B44;
+}
+
+
+
+p {
+    font-family: "Campton-Book";
+    font-size: 18px;
+    line-height: 26px;
+    color: #3E3B44;  
+}
+
+a {
+      font-family: "Campton-Bold";
+      color: #3E3B44;  
+}
+
+.center {
+    text-align: center;
+}
+
+/*GLOBALS*/
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: helvetica, arial, sans-serif;
+    font-weight: 100;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background-color: #F0EDEA;
+    height:100%;
+}
+
+section {
+  position: relative;
+    background: #F0EDEA;
+
+}
+
+/*Header Content*/
+
+
+#logo {
+   display:none; 
+}
+
+
+#ghost {
+    display:none;
+}
+
+.logo {
+    height: 48px;
+    width: auto;
+    padding: 48px 0 0 48px;
+}
+
+@media (max-width: 768px){
+    .logo {
+        height: 32px;
+        padding: 32px 0 0 32px;
+    }
+}
+
+.intro_text {
+    display: block;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(180deg, rgba(240, 237, 234, 0) 0%, #F0EDEA 100%);
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    padding: 0;
+}
+
+.intro_text H2 {
+    position: absolute;
+    bottom: 48px;
+    width: 100%;
+    
+}
+
+
+.arrow {
+    position: absolute;
+    bottom:32px;
+}
+
+
+.intro {
+    width: 100%;
+    height: 100%;
+    background: none;
+}
+
+/*VIDEO*/
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10000;
+}
+
+/*DEMO*/
+.demo {
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100px;
+    overflow: hidden;
+}
+
+.demo_text {
+    width: 400px;
+}
+
+h3.demo_text {
+   margin-bottom: 1px;
+   padding-top:250px;
+}
+
+.left {
+    display: block;
+    width: 600px;
+    float: left;
+    height: 600px;
+    display: block;
+   
+}
+
+
+.right {
+    display: block;
+    max-width: 600px;
+    float: left;
+}
+
+iframe {
+    width: 600px;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    pointer-events: none;
+
+}
+
+@media (max-width: 1000px){
+.demo_text {
+    width: 300px;
+}
+
+}
+
+@media (max-width: 768px){
+.left {
+    display: block;
+    width: 600px;
+    float: none;
+    height: auto;
+    display: block;
+    margin: -32px auto;
+   
+}
+    .right {
+    display: block;
+    max-width: 400px;
+    float: none;
+    margin: 0 auto;
+ 
+}
+    
+    .demo_text {
+    width: auto;
+    padding: 0 16px;
+}
+    h3.demo_text {
+   margin-bottom: 1px;
+   padding-top:0px;
+}
+    .intro_text H2 {
+    position: absolute;
+    bottom: 48px;
+    width: 100%;
+    
+}
+
+    .intro_text H2 {
+    position: absolute;
+    bottom: 32px;
+    width: 100%;
+    
+}
+
+
+.arrow {
+    position: absolute;
+    bottom:16px;
+}
+
+}
+
+
+@media (max-width: 600px){
+iframe {
+    width: 400px;
+    height: 400px;
+
+}
+    
+}
+
+.iframe-container {
+    overflow:scroll !important; -webkit-overflow-scrolling:touch !important;
+}
+
+.follow_us {
+    width: 200px;
+    padding-top: 40px;
+    padding-bottom: 80px;
+
+}
+
+@media (max-width: 600px){
+.follow_us {
+   padding-top: 40px;
+}
+
+}
+  
