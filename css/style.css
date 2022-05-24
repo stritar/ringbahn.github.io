@@ -11,6 +11,26 @@
   src: url('/fonts/CamptonBook/font.woff2') format('woff2'), url('/fonts/CamptonBook/font.woff') format('woff');
 }
 
+h2 {
+    font-family: "Campton-Book";
+    font-size: 24px;
+    color: #3E3B44;
+}
+
+h3 {
+    font-family: "Campton-Bold";
+    font-size: 32px;
+    line-height: 32px;
+    color: #3E3B44;
+}
+
+p{
+    font-family: "Campton-Book";
+    font-size: 16px;
+    line-height: 24px;
+    color: #3E3B44;  
+}
+
 /*GLOBALS*/
 
 body,
@@ -31,17 +51,63 @@ body {
 }
 
 section {
-    margin: 0;
-    position: relative;
+  position: relative;
     background: #F0EDEA;
 
 }
+
+/*Header Content*/
+
+
+div#ghost {
+    display:none;
+}
+
+
+
+
+
+.logo {
+    height: 48px;
+    width: auto;
+    padding: 48px 0 0 48px;
+}
+
+@media (max-width: 768px){
+    .logo {
+        height: 32px;
+        padding: 32px 0 0 32px;
+    }
+}
+
+.intro_text {
+    display: block;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(180deg, rgba(240, 237, 234, 0) 0%, #F0EDEA 100%);
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    padding: 0;
+}
+
+.intro_text H2 {
+    position: absolute;
+    bottom: 64px;
+    width: 100%;
+    
+}
+
+.arrow {
+    position: absolute;
+    bottom: 48px;
+}
+
 
 .intro {
     width: 100%;
     height: 100%;
     background: none;
-
 }
 
 /*VIDEO*/
@@ -55,20 +121,89 @@ video {
   z-index: -10000;
 }
 
-/*
-@media (max-width: 1014px) {
-  video {
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -10000;
-    display: none;
-    }
+/*DEMO*/
+.demo {
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100px;
+    overflow: hidden;
+}
+
+.demo_text {
+    width: 400px;
+}
+
+h3.demo_text {
+   margin-bottom: 1px;
+   padding-top:250px;
+}
+
+.left {
+    display: block;
+    width: 600px;
+    float: left;
+    height: 600px;
+    display: block;
+   
+}
+
+
+.right {
+    display: block;
+    max-width: 600px;
+    float: left;
+}
+
+iframe {
+    width: 600px;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+
+}
+
+@media (max-width: 1000px){
+.demo_text {
+    width: 300px;
+}
+
+}
+
+@media (max-width: 768px){
+.left {
+    display: block;
+    width: 600px;
+    float: none;
+    height: auto;
+    display: block;
+    margin: -32px auto;
+   
+}
+    .right {
+    display: block;
+    max-width: 400px;
+    float: none;
+    margin: 0 auto;
+ 
+}
     
-    .intro{
-        background: url(../img/video_bg.jpg)no-repeat center center;
-    }
-}*/
+    .demo_text {
+    width: auto;
+        padding: 0 16px;
+}
+    h3.demo_text {
+   margin-bottom: 1px;
+   padding-top:0px;
+}
+}
+
+
+@media (max-width: 600px){
+iframe {
+    width: 400px;
+    height: 400px;
+}
+    
+}
+
+
