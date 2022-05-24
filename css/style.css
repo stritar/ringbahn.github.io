@@ -78,17 +78,6 @@ div#ghost {
         height: 32px;
         padding: 32px 0 0 32px;
     }
-    .intro_text H2 {
-    position: absolute;
-    bottom: 48px;
-    width: 100%;
-    
-}
-
-.arrow {
-    position: absolute;
-    bottom: 16px;
-}
 }
 
 .intro_text {
@@ -104,14 +93,15 @@ div#ghost {
 
 .intro_text H2 {
     position: absolute;
-    bottom: 64px;
+    bottom: 48px;
     width: 100%;
     
 }
 
+
 .arrow {
     position: absolute;
-    bottom: 48px;
+    bottom:32px;
 }
 
 
@@ -206,6 +196,26 @@ iframe {
    margin-bottom: 1px;
    padding-top:0px;
 }
+    .intro_text H2 {
+    position: absolute;
+    bottom: 48px;
+    width: 100%;
+    
+}
+
+    .intro_text H2 {
+    position: absolute;
+    bottom: 32px;
+    width: 100%;
+    
+}
+
+
+.arrow {
+    position: absolute;
+    bottom:16px;
+}
+
 }
 
 
