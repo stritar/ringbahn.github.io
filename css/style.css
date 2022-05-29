@@ -71,10 +71,6 @@ body {
     height: 100%;
 }
 
-section {
-    display: block;
-    overflow: auto;
-}
 
 /*Header Content*/
 
@@ -179,6 +175,8 @@ video {
 
 .demo_container {
     padding: 0 16px;
+    display: block;
+    overflow: auto;
 
 }
 
