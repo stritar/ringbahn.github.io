@@ -71,6 +71,11 @@ body {
     height: 100%;
 }
 
+section {
+    display: block;
+    overflow: auto;
+}
+
 /*Header Content*/
 
 
