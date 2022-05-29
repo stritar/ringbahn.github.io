@@ -1,14 +1,14 @@
 ﻿/*FONTS*/
 @import url("//hello.myfonts.net/count/4a60c0");
-  
+
 @font-face {
-  font-family: "Campton-Bold";
-  src: url('/fonts/CamptonBold/font.woff2') format('woff2'), url('/fonts/CamptonBold/font.woff') format('woff');
+    font-family: "Campton-Bold";
+    src: url('/fonts/CamptonBold/font.woff2') format('woff2'), url('/fonts/CamptonBold/font.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Campton-Book";
-  src: url('/fonts/CamptonBook/font.woff2') format('woff2'), url('/fonts/CamptonBook/font.woff') format('woff');
+    font-family: "Campton-Book";
+    src: url('/fonts/CamptonBook/font.woff2') format('woff2'), url('/fonts/CamptonBook/font.woff') format('woff');
 }
 
 h2 {
@@ -20,23 +20,32 @@ h2 {
 h3 {
     font-family: "Campton-Bold";
     font-size: 32px;
-    line-height: 32px;
+    line-height: 1px;
     color: #3E3B44;
 }
-
 
 
 p {
     font-family: "Campton-Book";
     font-size: 18px;
-    line-height: 26px;
-    color: #3E3B44;  
+    color: #3E3B44;
 }
 
 a {
-      font-family: "Campton-Bold";
-      color: #3E3B44;  
+    font-family: "Campton-Bold";
+    color: #3E3B44;
 }
+
+@media (min-width: 1300px) {
+    h3 {
+        font-size: 52px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+}
+
 
 .center {
     text-align: center;
@@ -58,62 +67,25 @@ html {
 
 body {
     background-color: #F0EDEA;
-    height:100%;
-}
-
-section {
-  position: relative;
-    background: #F0EDEA;
-
+    height: 100%;
 }
 
 /*Header Content*/
 
 
 #logo {
-   display:none; 
+    display: none;
 }
 
 
 #ghost {
-    display:none;
+    display: none;
 }
 
 .logo {
-    height: 40px;
+    height: 32px;
     width: auto;
-    padding: 48px 0 0 48px;
-}
-
-@media (max-width: 768px){
-    .logo {
-        height: 32px;
-        padding: 32px 0 0 32px;
-    }
-}
-
-.intro_text {
-    display: block;
-    width: 100%;
-    height: 300px;
-    background: linear-gradient(180deg, rgba(240, 237, 234, 0) 0%, #F0EDEA 100%);
-    position: absolute;
-    text-align: center;
-    bottom: 0;
-    padding: 0;
-}
-
-.intro_text H2 {
-    position: absolute;
-    bottom: 48px;
-    width: 100%;
-    
-}
-
-
-.arrow {
-    position: absolute;
-    bottom:32px;
+    margin: 32px 0 0 32px;
 }
 
 
@@ -123,139 +95,176 @@ section {
     background: none;
 }
 
-/*VIDEO*/
-video {
-  object-fit: cover;
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -10000;
-}
 
-/*DEMO*/
-.demo {
-    max-width: 1200px;
-    margin: 0 auto;
-    min-height: 100px;
-    overflow: hidden;
-}
-
-.demo_text {
-    width: 400px;
-}
-
-h3.demo_text {
-   margin-bottom: 1px;
-   padding-top:250px;
-}
-
-.left {
+.intro_text {
     display: block;
-    width: 600px;
-    float: left;
-    height: 600px;
-    display: block;
-   
+    height: 300px;
+    background: linear-gradient(180deg, rgba(240, 237, 234, 0) 0%, #F0EDEA 100%);
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
 }
 
-
-.right {
-    display: block;
-    max-width: 600px;
-    float: left;
-}
-
-iframe {
-    width: 600px;
-    height: 600px;
-    margin: 0;
-    padding: 0;
-    pointer-events: none;
-
-}
-
-@media (max-width: 1000px){
-.demo_text {
-    width: 300px;
-}
-
-}
-
-@media (max-width: 768px){
-.left {
-    display: block;
-    width: 600px;
-    float: none;
-    height: auto;
-    display: block;
-    margin: -32px auto;
-   
-}
-    .right {
-    display: block;
-    max-width: 400px;
-    float: none;
-    margin: 0 auto;
- 
-}
-    
-    .demo_text {
-    width: auto;
-    padding: 0 16px;
-}
-    h3.demo_text {
-   margin-bottom: 1px;
-   padding-top:0px;
-}
-    .intro_text H2 {
+.intro_text H2 {
     position: absolute;
     bottom: 48px;
-    width: 100%;
-    
-}
 
-    .intro_text H2 {
-    position: absolute;
-    bottom: 32px;
-    width: 100%;
-    
 }
 
 
 .arrow {
     position: absolute;
-    bottom:16px;
+    bottom: 32px;
 }
 
+@media (min-width: 768px) {
+    .logo {
+        height: 48px;
+        width: auto;
+        margin: 40px 0 0 40px;
+    }
+
+    .intro_text H2 {
+        display: block;
+        width: 600px;
+        left: 50%;
+        margin-left: -300px;
+    }
+
+
+}
+
+@media (min-width: 2550px) {
+    .logo {
+        height: 64px;
+        width: auto;
+        margin: 52px 0 0 52px;
+    }
+
+    .intro_text H2 {
+        display: block;
+        width: 800px;
+        left: 50%;
+        margin-left: -400px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+
 }
 
 
-@media (max-width: 600px){
+/*VIDEO*/
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10000;
+}
+
+/*DEMO*/
+
+
+.demo_container {
+    padding: 0 16px;
+
+}
+
+@media (min-width: 1300px) {
+    .demo_container {
+        display: block;
+        width: 1300px;
+        margin: 0 auto;
+
+    }
+}
+
+
+.left {
+    width: 100%;
+    overflow: auto;
+}
+
+.right {
+    width: 100%;
+}
+
+.demo_desc {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    padding: 0;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+@media (min-width: 1023px) {
+    .left {
+        width: 50%;
+        float: left;
+    }
+
+    .right {
+        width: 50%;
+        float: right;
+        height: 600px;
+    }
+
+    .demo_desc {
+        margin-top: 300px;
+    }
+}
+
+
+@media (min-width: 1300px) {
+    .demo_desc {
+        max-width: 500px;
+        margin-top: 250px;
+    }
+}
+
+/*iframe*/
+
 iframe {
-    width: 400px;
+    display: block;
+    width: 100%;
     height: 400px;
+    margin: 0;
+    padding: 0;
+    pointer-events: none;
+}
 
+@media (min-width: 768px) {
+    iframe {
+        height: 600px;
+    }
 }
-    
-}
+
 
 .iframe-container {
-    overflow:scroll !important; -webkit-overflow-scrolling:touch !important;
+    overflow: scroll !important;
+    -webkit-overflow-scrolling: touch !important;
 }
 
-.follow_us {
-    width: 200px;
-    padding-top: 40px;
-    padding-bottom: 80px;
+/*Follow*/
 
+.follow_container {
+    display: block;
+    overflow: auto;
+    text-align: center;
+    padding: 64px 0;
 }
 
-@media (max-width: 600px){
-.follow_us {
-   padding-top: 40px;
-}
+@media (min-width: 1023px) {
+    .follow_container {
+        width: 600px;
+        margin: 0 auto;
 
+    }
 }
-  
