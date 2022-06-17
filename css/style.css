@@ -126,9 +126,9 @@ section {
 
 @media (min-width: 768px) {
     .logo {
-        height: 48px;
+        height: 40px;
         width: auto;
-        margin: 40px 0 0 40px;
+        margin: 32px 0 0 32px;
     }
 
     .intro_text H2 {
@@ -138,8 +138,8 @@ section {
         margin-left: -300px;
     }
 
-
 }
+
 
 @media (min-width: 2550px) {
     .logo {
